@@ -1,16 +1,62 @@
-## Hi there 👋
+# Kannan Priyadharshan (Dharshan)
 
-<!--
-**Dharshan2004/Dharshan2004** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Backend Engineer · Quant Developer in Training**  
+CS @ Nanyang Technological University · Expected 2029  
+Director, Quantitative Finance Academy · NTU Fintech Catalyst
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### What I'm building
+
+- 🦀 **Zoom Clone in Rust** — WebRTC signalling server + SFU from scratch in Rust/tokio. No shortcuts on the systems layer.
+- 📊 **market-strategy** — Factor model backtester with momentum/mean-reversion signals, Sharpe + drawdown metrics, sitting on top of market-replay
+
+---
+
+### What I care about
+
+I want to build the infrastructure that sits underneath financial markets — low-latency order pipelines, event-driven execution systems, the tooling that quantitative researchers depend on. I'm working toward a quant developer role by building deliberately in systems languages, studying market microstructure, and staying close to production systems.
+
+Currently finishing a Backend Engineering internship at eLife (AWS SQS, gRPC, Kubernetes). Previously at Netvirta (ETL pipelines, AWS EKS, 100k+ SKU onboarding at scale).
+
+---
+
+### Stack
+
+```
+Systems     Rust (learning) · C++ · Python · Go
+Backend     FastAPI · gRPC · QUIC · WebSockets · Redis · PostgreSQL
+Cloud       AWS (EKS, SQS) · Kubernetes · Docker · Terraform
+Quant       Market Microstructure · Backtesting · CAPM · Monte Carlo
+ML          LangChain · RAG · Qdrant · GenAI pipelines
+```
+
+---
+
+### Projects
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| [market-replay](https://github.com/Dharshan2004/market-replay) | Nanosecond-accurate top-of-book capture & replay for execution backtests. Monotonic clock, pluggable handler system, file rotation. | Python · WebSocket · Binance |
+| [capm-portfolio-optimizer](https://github.com/Dharshan2004/capm-portfolio-optimizer) | Beta estimation via linear regression + Markowitz MVO + Monte Carlo simulation | Python · NumPy · SciPy |
+| [wayfinder](https://github.com/Dharshan2004/wayfinder) | AI career navigation engine. Top 13 / 100+ teams at NTU Techfest 2026 | Next.js · pgvector · OpenAI |
+| [pollpulse-tn](https://github.com/Dharshan2004/pollpulse-tn) | Real-time NLP sentiment pipeline for Tamil Nadu 2026 election forecasting | Python · NLP · Supabase |
+
+---
+
+### Currently studying
+
+- *Options, Futures & Other Derivatives* — John Hull
+- MIT OCW 18.S096 — Mathematics for Quantitative Finance
+- *A Practical Guide to Quantitative Finance Interviews* — Green Book
+- Rust ownership model → bridging to C++ memory management
+
+---
+
+### Beyond the terminal
+
+Director of the Quantitative Finance Academy at NTU — designing curriculum on market microstructure and ML in finance for 80+ members. Varsity cricket. Long-term goal: a coffee estate in Kodaikanal.
+
+---
+
+🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 PRIYADHA013@e.ntu.edu.sg
