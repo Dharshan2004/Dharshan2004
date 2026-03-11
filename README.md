@@ -9,26 +9,26 @@ Director, Quantitative Finance Academy · NTU Fintech Catalyst
 ### What I'm building
 
 - 🦀 **Zoom Clone in Rust** — WebRTC signalling server + SFU from scratch in Rust/tokio. No shortcuts on the systems layer.
-- 📊 **market-strategy** — Factor model backtester with momentum/mean-reversion signals, Sharpe + drawdown metrics, sitting on top of market-replay
+- 📊 **market-strategy** — Factor model backtester with momentum/mean-reversion signals and Sharpe + drawdown metrics, sitting on top of market-replay
 
 ---
 
 ### What I care about
 
-I want to build the infrastructure that sits underneath financial markets — low-latency order pipelines, event-driven execution systems, the tooling that quantitative researchers depend on. I'm working toward a quant developer role by building deliberately in systems languages, studying market microstructure, and staying close to production systems.
+I want to build the infrastructure that sits underneath financial markets — optimal execution systems, low-latency order pipelines, the tooling that quantitative researchers depend on. I'm working toward a quant developer role by building deliberately in systems languages, studying market microstructure, and staying close to production systems.
 
-Currently finishing a Backend Engineering internship at eLife (AWS SQS, gRPC, Kubernetes). Previously at Netvirta (ETL pipelines, AWS EKS, 100k+ SKU onboarding at scale).
+Currently finishing a Backend Engineering internship at eLife (AWS SQS, gRPC, Kubernetes). Previously at Netvirta (ETL pipelines, AWS EKS, 100k+ SKU onboarding). At NTU, built a document ingestion pipeline for Skills@CCDS — PDF classification via OpenAI embeddings, schema-constrained LLM extraction with Zod validation, and human-in-the-loop verification before profile commit.
 
 ---
 
 ### Stack
 
 ```
-Systems     Rust (learning) · C++ · Python · Go
+Systems     Rust (learning) · C++ · Python · TypeScript · Go
 Backend     FastAPI · gRPC · QUIC · WebSockets · Redis · PostgreSQL
 Cloud       AWS (EKS, SQS) · Kubernetes · Docker · Terraform
-Quant       Market Microstructure · Backtesting · CAPM · Monte Carlo
-ML          LangChain · RAG · Qdrant · GenAI pipelines
+Quant       Almgren-Chriss · Market Microstructure · Optimal Execution · Backtesting
+ML          OpenAI Embeddings · LangChain · RAG · Qdrant · Zod · GenAI pipelines
 ```
 
 ---
@@ -37,6 +37,7 @@ ML          LangChain · RAG · Qdrant · GenAI pipelines
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
+| [trace-zero](https://github.com/Dharshan2004/trace-zero) | Full-stack optimal execution simulator. Implements Almgren-Chriss (2000) against real Binance L1 data. Compares AC vs TWAP vs Dump across isolated exchange instances, measuring implementation shortfall in bps. Bloomberg Terminal UI. | Python · FastAPI · Next.js · NumPy |
 | [market-replay](https://github.com/Dharshan2004/market-replay) | Nanosecond-accurate top-of-book capture & replay for execution backtests. Monotonic clock, pluggable handler system, file rotation. | Python · WebSocket · Binance |
 | [capm-portfolio-optimizer](https://github.com/Dharshan2004/capm-portfolio-optimizer) | Beta estimation via linear regression + Markowitz MVO + Monte Carlo simulation | Python · NumPy · SciPy |
 | [wayfinder](https://github.com/Dharshan2004/wayfinder) | AI career navigation engine. Top 13 / 100+ teams at NTU Techfest 2026 | Next.js · pgvector · OpenAI |
@@ -59,4 +60,4 @@ Director of the Quantitative Finance Academy at NTU — designing curriculum on 
 
 ---
 
-🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 PRIYADHA013@e.ntu.edu.sg
+🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 kpd2204@gmail.com
