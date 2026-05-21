@@ -62,4 +62,4 @@ Director of the Quantitative Finance Academy at NTU — designing curriculum on 
 
 ---
 
-🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 priyadha
+🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 [priyadha013@e.ntu.edu.sg](mailto://priyadha013@e.ntu.edu.sg) &nbsp;·&nbsp;
