@@ -65,6 +65,12 @@ ML          OpenAI Embeddings · LangChain · Qdrant · pgvector · GenAI pipeli
 
 ---
 
+### Writing
+
+- [**Two of Our Three Demos Failed Live. We Still Placed Third.**](https://kpriyadharshan.medium.com/two-of-our-three-demos-failed-live-we-still-placed-third-d42796137fa5) — building Shopee Live Producer, what broke on stage at the Sea × OpenAI Codex Regional Hackathon, and why a legible core beat a feature-complete one. *(Jun 2026)*
+
+---
+
 ### Currently reading
 
 - Andrej Karpathy — How LLMs Work (building from first principles)
