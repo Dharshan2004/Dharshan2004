@@ -8,7 +8,7 @@ LLM Agent Dev Intern @ Cyber SG R&D Programme Office
 
 ### What I'm building
 
-- **[Plexus](https://github.com/Retia-Labs/multiplayer-ai-harness)** — I'm building a collaborative workspace where teammates can supervise coding agents together, share sessions, approve actions, and review changes. Currently developing the desktop experience and onboarding.
+- **Plexus** — I'm building a collaborative workspace where teammates can supervise coding agents together, share sessions, approve actions, and review changes. Currently developing the desktop experience and onboarding.
 - **Agent evaluation @ Cyber SG R&D Programme Office** — working on evaluating agent behaviour and evidence grounding, including how agents handle incomplete or conflicting information.
 - **Agent infrastructure @ Cyber Sierra** — built tools for querying production codebases and a customer-facing knowledge agent that uses code-cited evidence and checks generated guides before publication. Refusing well turned out to be harder than answering well.
 
@@ -35,7 +35,7 @@ I started in low-latency market infrastructure. Deterministic replay, isolated s
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [**Plexus**](https://github.com/Retia-Labs/multiplayer-ai-harness) | Collaborative agent workspace with shared sessions, teammate approvals, handoffs, and change review. Under development. | JavaScript · Electron · Node.js · WebSockets · SQLite |
+| **Plexus** (private) | Collaborative agent workspace with shared sessions, teammate approvals, handoffs, and change review. Under development. | JavaScript · Electron · Node.js · WebSockets · SQLite |
 | [shopee-live-producer](https://github.com/Dharshan2004/shopee-live-producer) | Live-commerce agent that routes buyer comments to grounded answers, host escalation, or policy review. 🥉 Sea × OpenAI Codex Regional Hackathon 2026. | Next.js · LangChain DeepAgents · OpenAI · Supabase Realtime |
 | [wayfinder](https://github.com/Dharshan2004/wayfinder) | Maps résumé skills to target roles and builds a four-week learning roadmap with linked resources. Top 13 / 100+ teams at NTU Techfest 2026. | Next.js · pgvector · OpenAI |
 | [trace-zero](https://github.com/Dharshan2004/trace-zero) | Execution simulator with deterministic orderbook replay and isolated exchange instances for comparing strategies. | Python · FastAPI · Next.js · NumPy |
