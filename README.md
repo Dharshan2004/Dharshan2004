@@ -1,46 +1,33 @@
 # Kannan Priyadharshan (Dharshan)
 
-**AI Engineer · Agentic Infrastructure**  
+**AI Engineer · Agent Systems & Evaluation**  
 CS @ Nanyang Technological University · Expected 2029  
-AI Engineer @ Cyber Sierra
+LLM Agent Dev Intern @ Cyber SG R&D Programme Office
 
 ---
 
 ### What I'm building
 
-- **Agent infrastructure @ Cyber Sierra** — the internal platform that lets the product team query production codebases in natural language and run packaged agent skills to surface edge cases hidden in the code. Retrieval is agentic rather than a pre-built index, so nothing goes stale on commit. Most of this lives in private repos — happy to walk through it.
-- **Contributing to LiteLLM** — [PR #31076](https://github.com/BerriAI/litellm/pull/31076) merged upstream; working through progressively larger issues in the same area.
-- **Cursor for PMs** — early validation. Interviewing product managers to find the one workflow worth eliminating.
+- **[Plexus](https://github.com/Retia-Labs/multiplayer-ai-harness)** — I'm building a collaborative workspace where teammates can supervise coding agents together, share sessions, approve actions, and review changes. Currently developing the desktop experience and onboarding.
+- **Agent evaluation @ Cyber SG R&D Programme Office** — working on evaluating agent behaviour and evidence grounding, including how agents handle incomplete or conflicting information.
+- **Agent infrastructure @ Cyber Sierra** — built tools for querying production codebases and a customer-facing knowledge agent that uses code-cited evidence and checks generated guides before publication. Refusing well turned out to be harder than answering well.
 
 ---
 
 ### What I care about
 
-I build agent systems that run against production code and real users: retrieval that has to be correct, guardrails that have to hold, and evaluation that tells you when they don't. Right now that means agent infrastructure at Cyber Sierra, an AI-powered GRC platform in Singapore — an internal codebase-querying platform, and a customer-facing knowledge base that assembles product guides with code-cited evidence, gates publication behind automated misleading-content checks, and answers users through a chat agent constrained to disclaim or refuse rather than speculate. Refusing well turned out to be harder than answering well.
+I build agent systems and the tools to understand where they fail. I'm interested in how people supervise them, how they use evidence, and whether an evaluation actually tells us what to improve.
 
-Before that: high-throughput data pipelines at eLife (AWS SQS, gRPC, Kubernetes), ETL infrastructure at Netvirta (AWS EKS, 100k+ SKU onboarding), and a document ingestion pipeline for Skills@CCDS — PDF classification via OpenAI embeddings, schema-constrained LLM extraction with Zod validation, and human-in-the-loop verification before profile commit.
+My earlier work includes high-throughput data pipelines at eLife (AWS SQS, gRPC, Kubernetes), ETL infrastructure at Netvirta (AWS EKS, 100k+ SKU onboarding), and a document ingestion pipeline for Skills@CCDS with schema-constrained extraction and human verification.
 
-At core, I'm a problem solver. The domain matters less than the depth — I started in low-latency market infrastructure, and the same instincts (determinism, isolation, measuring the thing rather than guessing at it) are what I now bring to agents.
-
----
-
-### Stack
-
-```
-Agentic     LLM Orchestration · Multi-Agent Systems · Agentic RAG · Semantic Retrieval · Eval Frameworks
-Languages   Python · TypeScript · Go · C++
-Backend     FastAPI · gRPC · HTTP/3 · WebSockets · Redis · PostgreSQL
-Cloud       AWS (EKS, SQS) · Kubernetes · Docker · Terraform
-ML          OpenAI Embeddings · LangChain · Qdrant · pgvector · GenAI pipelines
-```
+I started in low-latency market infrastructure. Deterministic replay, isolated state, and measuring behaviour are still useful instincts when working with agents.
 
 ---
 
-### Open source
+### Research
 
-| Contribution | What it does |
-|---|---|
-| [**LiteLLM #31076**](https://github.com/BerriAI/litellm/pull/31076) — *merged* | Centralised the OpenAI → Anthropic usage translation so prompt-cache token counts survive every response path in the Anthropic messages adapter. Cache hits were being dropped from usage reporting, which quietly breaks cost accounting for anyone billing on cached tokens. |
+- **NTU URECA** — building and evaluating scientific-agent workflows, with a focus on reliability, evidence quality, and resource use.
+- **Algoverse** — exploring shared blind spots in multi-agent safety evaluation and how evidence selection affects reviewers' judgments. Research in progress.
 
 ---
 
@@ -48,40 +35,60 @@ ML          OpenAI Embeddings · LangChain · Qdrant · pgvector · GenAI pipeli
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [shopee-live-producer](https://github.com/Dharshan2004/shopee-live-producer) | Live-commerce agent that acts as a **producer, not a chatbot** — classifies each buyer comment and decides whether to auto-answer, escalate to the host, flag policy risk, or stay silent. A grounding gate blocks any reply not backed by product-fact IDs above a confidence threshold; host-confirmed answers extend session memory without overwriting the seeded catalogue. 🥉 Sea × OpenAI Codex Regional Hackathon 2026. | Next.js · LangChain DeepAgents · OpenAI · Supabase Realtime |
-| [wayfinder](https://github.com/Dharshan2004/wayfinder) | AI career navigation engine. Extracts skills from a résumé, diffs them against target-role requirements via pgvector semantic search, and generates a 4-week upskilling roadmap where every task links to a discovered resource. Top 13 / 100+ teams at NTU Techfest 2026. | Next.js · pgvector · OpenAI |
-| [pollpulse-tn](https://github.com/Dharshan2004/pollpulse-tn) | Real-time NLP sentiment pipeline for Tamil Nadu 2026 election forecasting. Aggregates and classifies social signals to surface swing-district indicators. | Python · NLP · Supabase |
-| [trace-zero](https://github.com/Dharshan2004/trace-zero) | Real-time execution simulator on nanosecond-accurate orderbook capture. Every strategy runs in its own isolated exchange instance so one lane's price impact can't contaminate another; monotonic clocks as the authoritative timing source; WebSocket streaming to a live front end. The domain is optimal execution — the engineering is deterministic replay and state isolation. | Python · FastAPI · Next.js · NumPy |
+| [**Plexus**](https://github.com/Retia-Labs/multiplayer-ai-harness) | Collaborative agent workspace with shared sessions, teammate approvals, handoffs, and change review. Under development. | JavaScript · Electron · Node.js · WebSockets · SQLite |
+| [shopee-live-producer](https://github.com/Dharshan2004/shopee-live-producer) | Live-commerce agent that routes buyer comments to grounded answers, host escalation, or policy review. 🥉 Sea × OpenAI Codex Regional Hackathon 2026. | Next.js · LangChain DeepAgents · OpenAI · Supabase Realtime |
+| [wayfinder](https://github.com/Dharshan2004/wayfinder) | Maps résumé skills to target roles and builds a four-week learning roadmap with linked resources. Top 13 / 100+ teams at NTU Techfest 2026. | Next.js · pgvector · OpenAI |
+| [trace-zero](https://github.com/Dharshan2004/trace-zero) | Execution simulator with deterministic orderbook replay and isolated exchange instances for comparing strategies. | Python · FastAPI · Next.js · NumPy |
 
 <details>
 <summary><b>Earlier work</b></summary>
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [market-replay](https://github.com/Dharshan2004/market-replay) | Nanosecond-accurate top-of-book capture & replay. Monotonic clock timestamps as the authoritative timing source, pluggable handler system, JSONL storage with file rotation. | Python · WebSocket · Binance |
-| [capm-portfolio-optimizer](https://github.com/Dharshan2004/capm-portfolio-optimizer) | Beta estimation via linear regression + Markowitz MVO + Monte Carlo simulation across 10,000 weight combinations. | Python · NumPy · SciPy |
+| [pollpulse-tn](https://github.com/Dharshan2004/pollpulse-tn) | NLP sentiment pipeline aggregating social signals for Tamil Nadu 2026 election analysis. | Python · NLP · Supabase |
+| [market-replay](https://github.com/Dharshan2004/market-replay) | Top-of-book capture and replay with monotonic timestamps, pluggable handlers, and rotating JSONL storage. | Python · WebSocket · Binance |
+| [capm-portfolio-optimizer](https://github.com/Dharshan2004/capm-portfolio-optimizer) | Beta estimation, Markowitz portfolio optimisation, and Monte Carlo simulation across 10,000 weight combinations. | Python · NumPy · SciPy |
 
 </details>
 
 ---
 
-### Writing
+### Open source
 
-- [**Two of Our Three Demos Failed Live. We Still Placed Third.**](https://kpriyadharshan.medium.com/two-of-our-three-demos-failed-live-we-still-placed-third-d42796137fa5) — building Shopee Live Producer, what broke on stage at the Sea × OpenAI Codex Regional Hackathon, and why a legible core beat a feature-complete one. *(Jun 2026)*
+- [**LiteLLM #31076**](https://github.com/BerriAI/litellm/pull/31076) — *merged*. Fixed missing cache-read and cache-creation token counts in the Anthropic messages adapter by sharing usage translation across streaming and non-streaming responses.
 
 ---
 
-### Currently reading
+### Stack
 
-- Andrej Karpathy — How LLMs Work (building from first principles)
+```
+Agents      LLM Orchestration · Multi-Agent Systems · Agentic RAG · Evaluation
+Languages   Python · TypeScript · JavaScript · Go · C++
+Backend     FastAPI · Node.js · gRPC · WebSockets · Redis · PostgreSQL
+Cloud       AWS (EKS, SQS) · Kubernetes · Docker · Terraform
+ML          OpenAI Embeddings · LangChain · Qdrant · pgvector
+```
+
+---
+
+### Writing
+
+- [**Two of Our Three Demos Failed Live. We Still Placed Third.**](https://kpriyadharshan.medium.com/two-of-our-three-demos-failed-live-we-still-placed-third-d42796137fa5) — building Shopee Live Producer and what broke on stage at the Sea × OpenAI Codex Regional Hackathon. *(Jun 2026)*
+
+---
+
+### On my bookshelf
+
 - Nassim Taleb — *Antifragile*
-- Bhagavad Gita Chapter 14 — on the three modes of nature
+- Bhagavad Gita, Chapter 14 — on the three modes of nature
 
 ---
 
 ### Beyond the terminal
 
-Head of Technology (Backend) for NTU CCDS TOP'26 — leading 7 backend engineers on a platform for 900 incoming students. Director of the Quantitative Finance Academy at NTU — curriculum on market microstructure and ML in finance for 80+ members. Varsity cricket. Long-term goal: a coffee estate in Kodaikanal.
+My campus work includes backend leadership for NTU CCDS TOP'26, with a team of 7 engineers building a platform for 900 incoming students, and directing the Quantitative Finance Academy at NTU, with curriculum on market microstructure and ML in finance for 80+ members.
+
+Varsity cricket. Long-term goal: a coffee estate in Kodaikanal.
 
 ---
 
