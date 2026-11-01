@@ -1,97 +1,34 @@
-# Kannan Priyadharshan (Dharshan)
+# Hi, I'm Dharshan
 
-**AI Engineer · Agent Systems & Evaluation**  
-CS @ Nanyang Technological University · Expected 2029  
-LLM Agent Dev Intern @ Cyber SG R&D Programme Office
+Computer Science undergraduate at Nanyang Technological University (graduating 2029). I build AI tools that automate real work, then check whether their outputs can be trusted.
 
----
+### Now
 
-### What I'm building
+- **LLM Agent Developer Intern, CyberSG R&D Programme Office (CRPO), NTU.** Evals for cybersecurity compliance assessment: a LangGraph and Langfuse harness with 218 cases across 4 frameworks, comparing AI outputs against expert-labelled answers.
+- **AI Safety Researcher, Algoverse** (research mentorship program). Why chat safety judges fail: PyTorch inference, batch screening and activation patching.
+- **Undergraduate Researcher, NTU URECA** with Prof. Wang Chen. Cost, latency and quality in multi-agent workflows.
+- Open to a full-time internship, 10 May to 13 Aug 2027.
 
-- **Plexus** — I'm building a collaborative workspace where teammates can supervise coding agents together, share sessions, approve actions, and review changes. Currently developing the desktop experience and onboarding.
-- **Agent evaluation @ Cyber SG R&D Programme Office** — working on evaluating agent behaviour and evidence grounding, including how agents handle incomplete or conflicting information.
-- **Agent infrastructure @ Cyber Sierra** — built tools for querying production codebases and a customer-facing knowledge agent that uses code-cited evidence and checks generated guides before publication. Refusing well turned out to be harder than answering well.
+### Selected work
 
----
+- [**ReelRank**](https://github.com/Dharshan2004/reelrank): short-video recommender on KuaiRand-Pure. Two-tower retrieval with FAISS, a caption safety filter, LR / DeepFM / MMoE ranking, served with FastAPI. Recall@200 +14% vs popularity and +25% vs ItemCF over 5 seeds (paired bootstrap CIs exclude zero). Load test: 2,890 requests, 0 failures, 100 ms p99.
+- [**CommentGuard**](https://github.com/Dharshan2004/CommentGuard): Qwen3-4B QLoRA toxicity classifier. Frozen test F1 0.62 vs 0.27 for the base model and 0.35 for TF-IDF logistic regression. Weights on [Hugging Face](https://huggingface.co/dharshannn/CommentGuard-Qwen3-4B-MLX-LoRA).
+- [**Shopee Live Producer**](https://github.com/Dharshan2004/shopee-live-producer): AI co-producer for live commerce, 3rd of 40 teams at the Sea × OpenAI hackathon. I owned the agent orchestration, including checking claims against available data before a reply goes out.
+- [**LiteLLM #31076**](https://github.com/BerriAI/litellm/pull/31076) (merged): Anthropic-compatible cache-token reporting.
 
-### What I care about
+### Experience
 
-I build agent systems and the tools to understand where they fail. I'm interested in how people supervise them, how they use evidence, and whether an evaluation actually tells us what to improve.
-
-My earlier work includes high-throughput data pipelines at eLife (AWS SQS, gRPC, Kubernetes), ETL infrastructure at Netvirta (AWS EKS, 100k+ SKU onboarding), and a document ingestion pipeline for Skills@CCDS with schema-constrained extraction and human verification.
-
-I started in low-latency market infrastructure. Deterministic replay, isolated state, and measuring behaviour are still useful instincts when working with agents.
-
----
-
-### Research
-
-- **NTU URECA** — building and evaluating scientific-agent workflows, with a focus on reliability, evidence quality, and resource use.
-- **Algoverse** — exploring shared blind spots in multi-agent safety evaluation and how evidence selection affects reviewers' judgments. Research in progress.
-
----
-
-### Projects
-
-| Project | What it does | Stack |
-|---------|-------------|-------|
-| **Plexus** (private) | Collaborative agent workspace with shared sessions, teammate approvals, handoffs, and change review. Under development. | JavaScript · Electron · Node.js · WebSockets · SQLite |
-| [shopee-live-producer](https://github.com/Dharshan2004/shopee-live-producer) | Live-commerce agent that routes buyer comments to grounded answers, host escalation, or policy review. 🥉 Sea × OpenAI Codex Regional Hackathon 2026. | Next.js · LangChain DeepAgents · OpenAI · Supabase Realtime |
-| [wayfinder](https://github.com/Dharshan2004/wayfinder) | Maps résumé skills to target roles and builds a four-week learning roadmap with linked resources. Top 13 / 100+ teams at NTU Techfest 2026. | Next.js · pgvector · OpenAI |
-| [trace-zero](https://github.com/Dharshan2004/trace-zero) | Execution simulator with deterministic orderbook replay and isolated exchange instances for comparing strategies. | Python · FastAPI · Next.js · NumPy |
-
-<details>
-<summary><b>Earlier work</b></summary>
-
-| Project | What it does | Stack |
-|---------|-------------|-------|
-| [pollpulse-tn](https://github.com/Dharshan2004/pollpulse-tn) | NLP sentiment pipeline aggregating social signals for Tamil Nadu 2026 election analysis. | Python · NLP · Supabase |
-| [market-replay](https://github.com/Dharshan2004/market-replay) | Top-of-book capture and replay with monotonic timestamps, pluggable handlers, and rotating JSONL storage. | Python · WebSocket · Binance |
-| [capm-portfolio-optimizer](https://github.com/Dharshan2004/capm-portfolio-optimizer) | Beta estimation, Markowitz portfolio optimisation, and Monte Carlo simulation across 10,000 weight combinations. | Python · NumPy · SciPy |
-
-</details>
-
----
-
-### Open source
-
-- [**LiteLLM #31076**](https://github.com/BerriAI/litellm/pull/31076) — *merged*. Fixed missing cache-read and cache-creation token counts in the Anthropic messages adapter by sharing usage translation across streaming and non-streaming responses.
-
----
-
-### Stack
-
-```
-Agents      LLM Orchestration · Multi-Agent Systems · Agentic RAG · Evaluation
-Languages   Python · TypeScript · JavaScript · Go · C++
-Backend     FastAPI · Node.js · gRPC · WebSockets · Redis · PostgreSQL
-Cloud       AWS (EKS, SQS) · Kubernetes · Docker · Terraform
-ML          OpenAI Embeddings · LangChain · Qdrant · pgvector
-```
-
----
+- **Cyber Sierra**, AI Engineer Intern (May to Aug 2026). Sole developer of a codebase knowledge agent used daily by the product team; helped cut cost per trace by 45% on an agent platform.
+- **eLife Inc.**, Backend Engineer Intern, Discovery AI (Dec 2025 to Apr 2026). Moved 6 scrapers from TypeScript to Python on AWS SQS, behind 10,000+ daily jobs.
+- **NetVirta, Inc.**, Backend Engineer Intern (Feb to Nov 2025). LLM size-chart extraction: 4 to 5 hours down to under 30 minutes per brand, across 80 brands.
+- **Campus:** Head of Technology (Backend), NTU CCDS TOP'26, leading 7 backend engineers for 900+ students. Director of Partnerships, NTU CCDS AI/ML Club.
 
 ### Writing
 
-- [**Two of Our Three Demos Failed Live. We Still Placed Third.**](https://kpriyadharshan.medium.com/two-of-our-three-demos-failed-live-we-still-placed-third-d42796137fa5) — building Shopee Live Producer and what broke on stage at the Sea × OpenAI Codex Regional Hackathon. *(Jun 2026)*
+- [Building a voice shopping agent where the model talks and the store decides](https://kpriyadharshan.medium.com/building-a-voice-shopping-agent-where-the-model-talks-and-the-store-decides-4c2a9ca546c8)
 
----
+### Contact
 
-### On my bookshelf
+[kpriyadharshan.dev](https://kpriyadharshan.dev) · [kpd2204@gmail.com](mailto:kpd2204@gmail.com) · [LinkedIn](https://linkedin.com/in/kpriyadharshan) · [Medium](https://medium.com/@kpriyadharshan)
 
-- Nassim Taleb — *Antifragile*
-- Bhagavad Gita, Chapter 14 — on the three modes of nature
-
----
-
-### Beyond the terminal
-
-My campus work includes backend leadership for NTU CCDS TOP'26, with a team of 7 engineers building a platform for 900 incoming students, and directing the Quantitative Finance Academy at NTU, with curriculum on market microstructure and ML in finance for 80+ members.
-
-Varsity cricket. Long-term goal: a coffee estate in Kodaikanal.
-
----
-
-📍 Singapore → Hong Kong (HKU exchange, Jan 2027) · **Open to Summer 2027 roles**
-
-🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 [kpd2204@gmail.com](mailto:kpd2204@gmail.com)
+When I'm not at a laptop, I'm usually travelling. Mountains especially.
