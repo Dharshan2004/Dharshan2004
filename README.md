@@ -77,7 +77,7 @@ Head of Technology (Backend), NTU CCDS TOP'26, leading 7 backend engineers for<b
 <img src="./hd-builds.svg" width="880" alt="builds"/>
 
 **[ReelRank](https://github.com/Dharshan2004/reelrank)** - short-video recommender<br/>
-<samp>faiss · deepfm · mmoe · fastapi</samp>
+<samp>pytorch · faiss · deepfm · mmoe · fastapi</samp>
 
 Two-tower retrieval with FAISS, a caption safety filter, LR / DeepFM / MMoE<br/>
 ranking on KuaiRand-Pure. Recall@200 +14% vs popularity and +25% vs ItemCF over<br/>
