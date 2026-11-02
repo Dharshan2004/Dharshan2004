@@ -142,11 +142,3 @@ Cost, latency and quality in multi-agent scientific research workflows.
 <samp>&nbsp;→&nbsp;</samp> Singapore
 
 <br/>
-
-<sub>
-ASCII ridge field from <a href="https://kpriyadharshan.dev">kpriyadharshan.dev</a>
-(<code>AsciiBanner.tsx</code>), rendered as a self-typing SVG.
-Headings and typeface setup adapted from
-<a href="https://github.com/likalight/likalight">likalight</a>.
-Typeface: <a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a>, SIL OFL 1.1.
-</sub>
