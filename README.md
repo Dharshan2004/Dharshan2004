@@ -1,97 +1,152 @@
-# Kannan Priyadharshan (Dharshan)
+<div align="center">
 
-**AI Engineer · Agent Systems & Evaluation**  
-CS @ Nanyang Technological University · Expected 2029  
-LLM Agent Dev Intern @ Cyber SG R&D Programme Office
+<img src="./ascii.svg" width="500" alt="ASCII mountain ridge banner, typing itself out row by row"/>
 
----
+### Priyadharshan Kannan
 
-### What I'm building
+<samp>computer science · nanyang technological university · singapore</samp>
 
-- **Plexus** — I'm building a collaborative workspace where teammates can supervise coding agents together, share sessions, approve actions, and review changes. Currently developing the desktop experience and onboarding.
-- **Agent evaluation @ Cyber SG R&D Programme Office** — working on evaluating agent behaviour and evidence grounding, including how agents handle incomplete or conflicting information.
-- **Agent infrastructure @ Cyber Sierra** — built tools for querying production codebases and a customer-facing knowledge agent that uses code-cited evidence and checks generated guides before publication. Refusing well turned out to be harder than answering well.
+<a href="https://kpriyadharshan.dev">website</a> ·
+<a href="https://linkedin.com/in/kpriyadharshan">linkedin</a> ·
+<a href="mailto:kpd2204@gmail.com">email</a> ·
+<a href="https://medium.com/@kpriyadharshan">medium</a> ·
+<a href="https://github.com/Dharshan2004?tab=repositories">repositories</a>
 
----
+</div>
 
-### What I care about
+<br/>
 
-I build agent systems and the tools to understand where they fail. I'm interested in how people supervise them, how they use evidence, and whether an evaluation actually tells us what to improve.
+> I build AI tools that automate real work, then check whether their outputs
+> can be trusted. Agents and evals that have to survive contact with users.
 
-My earlier work includes high-throughput data pipelines at eLife (AWS SQS, gRPC, Kubernetes), ETL infrastructure at Netvirta (AWS EKS, 100k+ SKU onboarding), and a document ingestion pipeline for Skills@CCDS with schema-constrained extraction and human verification.
+<br/>
 
-I started in low-latency market infrastructure. Deterministic replay, isolated state, and measuring behaviour are still useful instincts when working with agents.
+<img src="./hd-about.svg" width="880" alt="about"/>
 
----
+Computer Science undergraduate at Nanyang Technological University, graduating<br/>
+2029. Most of my time goes into agents and evaluation harnesses that run in<br/>
+real stacks: the boring bits that make a demo survive contact with users.
 
-### Research
+When I'm not at a laptop, I'm usually travelling. Mountains especially.
 
-- **NTU URECA** — building and evaluating scientific-agent workflows, with a focus on reliability, evidence quality, and resource use.
-- **Algoverse** — exploring shared blind spots in multi-agent safety evaluation and how evidence selection affects reviewers' judgments. Research in progress.
+<br/>
 
----
+<img src="./hd-now.svg" width="880" alt="now"/>
 
-### Projects
+<samp>&nbsp;→&nbsp;</samp> LLM Agent Developer Intern, CyberSG R&D Programme Office (CRPO), NTU<br/>
+<samp>&nbsp;→&nbsp;</samp> AI Safety Researcher, Algoverse · Undergraduate Researcher, NTU URECA<br/>
+<samp>&nbsp;→&nbsp;</samp> Open to a full-time internship, 10 May to 13 Aug 2027
 
-| Project | What it does | Stack |
-|---------|-------------|-------|
-| **Plexus** (private) | Collaborative agent workspace with shared sessions, teammate approvals, handoffs, and change review. Under development. | JavaScript · Electron · Node.js · WebSockets · SQLite |
-| [shopee-live-producer](https://github.com/Dharshan2004/shopee-live-producer) | Live-commerce agent that routes buyer comments to grounded answers, host escalation, or policy review. 🥉 Sea × OpenAI Codex Regional Hackathon 2026. | Next.js · LangChain DeepAgents · OpenAI · Supabase Realtime |
-| [wayfinder](https://github.com/Dharshan2004/wayfinder) | Maps résumé skills to target roles and builds a four-week learning roadmap with linked resources. Top 13 / 100+ teams at NTU Techfest 2026. | Next.js · pgvector · OpenAI |
-| [trace-zero](https://github.com/Dharshan2004/trace-zero) | Execution simulator with deterministic orderbook replay and isolated exchange instances for comparing strategies. | Python · FastAPI · Next.js · NumPy |
+<br/>
 
-<details>
-<summary><b>Earlier work</b></summary>
+<img src="./hd-work.svg" width="880" alt="work"/>
 
-| Project | What it does | Stack |
-|---------|-------------|-------|
-| [pollpulse-tn](https://github.com/Dharshan2004/pollpulse-tn) | NLP sentiment pipeline aggregating social signals for Tamil Nadu 2026 election analysis. | Python · NLP · Supabase |
-| [market-replay](https://github.com/Dharshan2004/market-replay) | Top-of-book capture and replay with monotonic timestamps, pluggable handlers, and rotating JSONL storage. | Python · WebSocket · Binance |
-| [capm-portfolio-optimizer](https://github.com/Dharshan2004/capm-portfolio-optimizer) | Beta estimation, Markowitz portfolio optimisation, and Monte Carlo simulation across 10,000 weight combinations. | Python · NumPy · SciPy |
+**LLM Agent Developer Intern** - CyberSG R&D Programme Office (CRPO), NTU<br/>
+<samp>aug 2026 - present · langgraph, langfuse, evals</samp>
 
-</details>
+Evals for cybersecurity compliance assessment: a LangGraph and Langfuse harness<br/>
+with 218 cases across 4 frameworks, comparing AI outputs against expert-labelled<br/>
+answers.
 
----
+**AI Engineer Intern** - Cyber Sierra<br/>
+<samp>may 2026 - aug 2026 · react, sql, docker, kubernetes</samp>
 
-### Open source
+Sole developer of a codebase knowledge agent used daily by the product team;<br/>
+helped cut cost per trace by 45% on an agent platform.
 
-- [**LiteLLM #31076**](https://github.com/BerriAI/litellm/pull/31076) — *merged*. Fixed missing cache-read and cache-creation token counts in the Anthropic messages adapter by sharing usage translation across streaming and non-streaming responses.
+**Backend Engineer Intern, Discovery AI** - eLife Inc.<br/>
+<samp>dec 2025 - apr 2026 · python, aws sqs</samp>
 
----
+Moved 6 scrapers from TypeScript to Python on AWS SQS, behind 10,000+ daily jobs.
 
-### Stack
+**Backend Engineer Intern** - NetVirta, Inc.<br/>
+<samp>feb 2025 - nov 2025 · llm extraction</samp>
 
-```
-Agents      LLM Orchestration · Multi-Agent Systems · Agentic RAG · Evaluation
-Languages   Python · TypeScript · JavaScript · Go · C++
-Backend     FastAPI · Node.js · gRPC · WebSockets · Redis · PostgreSQL
-Cloud       AWS (EKS, SQS) · Kubernetes · Docker · Terraform
-ML          OpenAI Embeddings · LangChain · Qdrant · pgvector
-```
+LLM size-chart extraction: 4 to 5 hours down to under 30 minutes per brand,<br/>
+across 80 brands.
 
----
+**Campus**<br/>
+<samp>ntu ccds top'26 · ntu ccds ai/ml club</samp>
 
-### Writing
+Head of Technology (Backend), NTU CCDS TOP'26, leading 7 backend engineers for<br/>
+900+ students. Director of Partnerships, NTU CCDS AI/ML Club.
 
-- [**Two of Our Three Demos Failed Live. We Still Placed Third.**](https://kpriyadharshan.medium.com/two-of-our-three-demos-failed-live-we-still-placed-third-d42796137fa5) — building Shopee Live Producer and what broke on stage at the Sea × OpenAI Codex Regional Hackathon. *(Jun 2026)*
+<br/>
 
----
+<img src="./hd-builds.svg" width="880" alt="builds"/>
 
-### On my bookshelf
+**[ReelRank](https://github.com/Dharshan2004/reelrank)** - short-video recommender<br/>
+<samp>faiss · deepfm · mmoe · fastapi</samp>
 
-- Nassim Taleb — *Antifragile*
-- Bhagavad Gita, Chapter 14 — on the three modes of nature
+Two-tower retrieval with FAISS, a caption safety filter, LR / DeepFM / MMoE<br/>
+ranking on KuaiRand-Pure. Recall@200 +14% vs popularity and +25% vs ItemCF over<br/>
+5 seeds. Load test: 2,890 requests, 0 failures, 100 ms p99.
 
----
+**[CommentGuard](https://github.com/Dharshan2004/CommentGuard)** - toxicity classifier<br/>
+<samp>qwen3-4b · qlora · huggingface</samp>
 
-### Beyond the terminal
+Qwen3-4B QLoRA toxicity classifier. Frozen test F1 0.62 vs 0.27 for the base<br/>
+model and 0.35 for TF-IDF logistic regression. Weights on<br/>
+[Hugging Face](https://huggingface.co/dharshannn/CommentGuard-Qwen3-4B-MLX-LoRA).
 
-My campus work includes backend leadership for NTU CCDS TOP'26, with a team of 7 engineers building a platform for 900 incoming students, and directing the Quantitative Finance Academy at NTU, with curriculum on market microstructure and ML in finance for 80+ members.
+**[Shopee Live Producer](https://github.com/Dharshan2004/shopee-live-producer)** - live-commerce co-producer<br/>
+<samp>deepagents · sea × openai hackathon</samp>
 
-Varsity cricket. Long-term goal: a coffee estate in Kodaikanal.
+AI co-producer for live commerce, 3rd of 40 teams at the Sea × OpenAI hackathon.<br/>
+Owned the agent orchestration, including checking claims against available data<br/>
+before a reply goes out.
 
----
+**[LiteLLM #31076](https://github.com/BerriAI/litellm/pull/31076)** - merged<br/>
+<samp>anthropic · cache-token reporting</samp>
 
-📍 Singapore → Hong Kong (HKU exchange, Jan 2027) · **Open to Summer 2027 roles**
+Anthropic-compatible cache-token reporting across streaming and non-streaming<br/>
+paths.
 
-🌐 [kpriyadharshan.dev](https://kpriyadharshan.dev) &nbsp;·&nbsp; 💼 [linkedin.com/in/kpriyadharshan](https://linkedin.com/in/kpriyadharshan) &nbsp;·&nbsp; 📧 [kpd2204@gmail.com](mailto:kpd2204@gmail.com)
+<br/>
+
+<img src="./hd-research.svg" width="880" alt="research"/>
+
+**Algoverse** - AI Safety Researcher<br/>
+<samp>pytorch · activation patching · in progress</samp>
+
+Why chat safety judges fail: PyTorch inference, batch screening and activation<br/>
+patching.
+
+**NTU URECA** with Prof. Wang Chen<br/>
+<samp>multi-agent workflows · in progress</samp>
+
+Cost, latency and quality in multi-agent scientific research workflows.
+
+<br/>
+
+<img src="./hd-stack.svg" width="880" alt="stack"/>
+
+<samp>languages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python, typescript, javascript, go, c++</samp><br/>
+<samp>ai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;langgraph, langfuse, langchain, pytorch, qlora, llm eval</samp><br/>
+<samp>web & data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fastapi, next.js, react, postgresql, redis</samp><br/>
+<samp>infrastructure&nbsp;&nbsp;&nbsp;aws (eks, sqs), kubernetes, docker</samp>
+
+<br/>
+
+<img src="./hd-writing.svg" width="880" alt="writing"/>
+
+<samp>&nbsp;→&nbsp;</samp> <a href="https://kpriyadharshan.medium.com/building-a-voice-shopping-agent-where-the-model-talks-and-the-store-decides-4c2a9ca546c8">Building a voice shopping agent where the model talks and the store decides</a>
+
+<br/>
+
+<img src="./hd-contact.svg" width="880" alt="contact"/>
+
+<samp>&nbsp;→&nbsp;</samp> <a href="mailto:kpd2204@gmail.com">kpd2204@gmail.com</a><br/>
+<samp>&nbsp;→&nbsp;</samp> <a href="https://kpriyadharshan.dev">kpriyadharshan.dev</a><br/>
+<samp>&nbsp;→&nbsp;</samp> <a href="https://linkedin.com/in/kpriyadharshan">linkedin.com/in/kpriyadharshan</a><br/>
+<samp>&nbsp;→&nbsp;</samp> Singapore
+
+<br/>
+
+<sub>
+ASCII ridge field from <a href="https://kpriyadharshan.dev">kpriyadharshan.dev</a>
+(<code>AsciiBanner.tsx</code>), rendered as a self-typing SVG.
+Headings and typeface setup adapted from
+<a href="https://github.com/likalight/likalight">likalight</a>.
+Typeface: <a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a>, SIL OFL 1.1.
+</sub>
