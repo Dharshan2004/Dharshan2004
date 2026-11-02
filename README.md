@@ -33,7 +33,7 @@ When I'm not at a laptop, I'm usually travelling. Mountains especially.
 
 <img src="./hd-now.svg" width="880" alt="now"/>
 
-<samp>&nbsp;→&nbsp;</samp> LLM Agent Developer Intern, CyberSG R&D Programme Office (CRPO), NTU<br/>
+<samp>&nbsp;→&nbsp;</samp> Compliance LLM Agent Development Intern @ NTU (ComplianceAgent project)<br/>
 <samp>&nbsp;→&nbsp;</samp> AI Safety Researcher, Algoverse · Undergraduate Researcher, NTU URECA<br/>
 <samp>&nbsp;→&nbsp;</samp> Open to a full-time internship, 10 May to 13 Aug 2027
 
@@ -41,12 +41,12 @@ When I'm not at a laptop, I'm usually travelling. Mountains especially.
 
 <img src="./hd-work.svg" width="880" alt="work"/>
 
-**LLM Agent Developer Intern** - CyberSG R&D Programme Office (CRPO), NTU<br/>
-<samp>aug 2026 - present · langgraph, langfuse, evals</samp>
+**Compliance LLM Agent Development Intern** - NTU (ComplianceAgent project)<br/>
+<samp>aug 2026 - present · internship · langgraph, langfuse, evals</samp>
 
-Evals for cybersecurity compliance assessment: a LangGraph and Langfuse harness<br/>
-with 218 cases across 4 frameworks, comparing AI outputs against expert-labelled<br/>
-answers.
+Agent evaluation for cybersecurity compliance assessment: a LangGraph and<br/>
+Langfuse harness with 218 cases across 4 frameworks, comparing AI outputs<br/>
+against expert-labelled answers.
 
 **AI Engineer Intern** - Cyber Sierra<br/>
 <samp>may 2026 - aug 2026 · react, sql, docker, kubernetes</samp>
