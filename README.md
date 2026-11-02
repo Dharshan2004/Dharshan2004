@@ -42,7 +42,8 @@ When I'm not at a laptop, I'm usually travelling. Mountains especially.
 <img src="./hd-work.svg" width="880" alt="work"/>
 
 **Compliance LLM Agent Development Intern** - NTU (ComplianceAgent project)<br/>
-<samp>aug 2026 - present · internship · langgraph, langfuse, evals</samp>
+<samp>aug 2026 - present · internship · langgraph, langfuse, evals</samp><br/>
+<samp>supported by the CyberSG R&D Programme Office (CRPO) Internship Programme</samp>
 
 Agent evaluation for cybersecurity compliance assessment: a LangGraph and<br/>
 Langfuse harness with 218 cases across 4 frameworks, comparing AI outputs<br/>
